@@ -31,6 +31,7 @@ public class MenuClient extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -44,15 +45,15 @@ public class MenuClient extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 153, 162, 49));
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 150, 162, 49));
 
-        jButton1.setText("Louer une voiture");
+        jButton1.setText("Laisser un commentaire");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(135, 153, 150, 49));
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 260, 190, 49));
 
         jButton4.setText("Retour");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -60,7 +61,15 @@ public class MenuClient extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(282, 371, 110, -1));
+        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 380, 110, -1));
+
+        jButton3.setText("Louer une voiture");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 160, 49));
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\bengh\\OneDrive\\Pictures\\33.jpg")); // NOI18N
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-3, -4, 680, 460));
@@ -96,6 +105,12 @@ this.setVisible(false);        // TODO add your handling code here:
 ClientouAdmin c = new ClientouAdmin();
 c.setVisible(true);     // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+ this.setVisible(false);        // TODO add your handling code here:
+commentaire c = new commentaire();
+c.setVisible(true);     // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -135,6 +150,7 @@ c.setVisible(true);     // TODO add your handling code here:
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel2;

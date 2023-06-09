@@ -182,7 +182,7 @@ public class GestionReservationAdmin extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
     int idUser = AuthClient.idSession; 
         Connection conn = Singleton.getconn();
-        String sql = "SELECT * FROM `reservation` WHERE Client_id = '" + idUser + "'" ;
+        String sql = "SELECT * FROM `reservation`" ;
         DefaultTableModel jt =null ;
         try{
             PreparedStatement ps =conn.prepareStatement(sql) ;

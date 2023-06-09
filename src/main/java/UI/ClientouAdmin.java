@@ -38,6 +38,7 @@ public class ClientouAdmin extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -51,7 +52,7 @@ public class ClientouAdmin extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 140, 30));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 140, 30));
 
         jButton2.setBackground(new java.awt.Color(255, 153, 51));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
@@ -81,7 +82,17 @@ public class ClientouAdmin extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 100, 30));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 180, 120, 30));
+
+        jButton6.setBackground(new java.awt.Color(51, 51, 51));
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton6.setText("Avis");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 30));
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\bengh\\OneDrive\\Desktop\\rentcARE.PNG")); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 290));
@@ -112,6 +123,12 @@ c.setVisible(true);// TODO add your handling code here:
      AuthAdmin a = new AuthAdmin();
      a.setVisible(true);  // 
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+      this.setVisible(false);
+     Commentaires a = new Commentaires();
+     a.setVisible(true);
+    }//GEN-LAST:event_jButton6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -157,6 +174,7 @@ c.setVisible(true);// TODO add your handling code here:
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
